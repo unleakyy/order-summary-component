@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'redhat';
+}
+
+@font-face {
+    font-family: 'redhat';
+    src: url(./font/redhat/RedHatDisplay-VariableFont_wght.ttf);
+}
+
+body {
+    /* background-color: #877df3; */
+    padding: 20px 20px 0px;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.template {
+    width: auto;
+    margin: 10px auto 0px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    overflow: hidden;
+    min-width: 310px;
+    max-width: 450px;
+}
+
+header img {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 9%;
+    text-align: center;
+}
+
+article {
+    margin: 5% 0px 5%;
+    padding: 0px 1.4%;
+}
+
+article h2 {
+    margin-bottom: 3%;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+article p,
+.annual-plan-section p {
+    font-weight: 600;
+    color: rgb(107, 107, 107);
+}
+
+.plan-section {
+    background-color: #3d329e54;
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 5%;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+.annual-plan-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+}
+
+h4,
+p {
+    font-size: 1rem;
+}
+
+h4,
+.annual-plan-section p {
+    margin: 2% 0px;
+}
+
+.change-section {
+    text-decoration: underline;
+    color: #3d329e;
+}
+
+.button-section {
+    width: 100%;
+    margin: 8% 0px;
+}
+
+#payment-button {
+    background-color: #3d329e;
+    color: white;
+    padding: 4.5%;
+    border: none;
+    font-weight: 700;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 5px 20px 25px 1px rgba(102, 93, 177, 0.4);
+}
+
+.cancel-div {
+    padding: 0px 30%;
+    margin: 8% 0px 2%;
+}
+
+#cancel-button {
+    color: rgb(150, 150, 150);
+}
+
+button:hover,
+.change-section:hover,
+#cancel-button:hover {
+    cursor: pointer;
+}
+
+#payment-button:hover {
+    background-color: #655cb1;
+    font-size: 1.1rem;
+}
+
+#cancel-button:hover {
+    color: black;
+    font-size: 1.05rem;
+}
+
+.change-section:hover {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 576px) {
+
+    * {
+        font-size: 1.05rem;
+    }
+
+    .change-section p {
+        font-size: 0.9rem;
+    }
+
+}
